@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UniCost | Student Cash-Flow Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">UNICOST</p>
+      <h1>Will your student loan cover your year?</h1>
+      <p class="intro">
+        Estimate whether your termly maintenance loan will cover your weekly costs, and find out when you might run short.
+      </p>
+    </header>
+
+    <section class="calculator-card">
+      <h2>Your details</h2>
+
+      <label for="loanAmount">Total annual maintenance loan (£)</label>
+      <input id="loanAmount" type="number" min="0" placeholder="For example: 8000" />
+
+      <label for="weeklyRent">Weekly rent (£)</label>
+      <input id="weeklyRent" type="number" min="0" placeholder="For example: 130" />
+
+      <label for="weeklySpend">Other weekly spending (£)</label>
+      <input id="weeklySpend" type="number" min="0" placeholder="For example: 60" />
+
+      <label for="startingBalance">Money you have saved before term starts (£)</label>
+      <input id="startingBalance" type="number" min="0" placeholder="For example: 200" />
+
+      <button id="calculateButton">Run my cash-flow simulation</button>
+    </section>
+
+    <section class="results-card" id="results">
+      <h2>Your result</h2>
+      <p>Enter your figures and select "Run my cash-flow simulation".</p>
+    </section>
+
+    <p class="disclaimer">
+      Educational purposes only — this is not financial advice. Loan payment dates and figures are estimates based on typical UK student finance schedules.
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
